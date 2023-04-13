@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body{
+    background: url(img/pokemon-bckg.jpg) no-repeat;
+    background-size: cover;
+    font-family: 'Spartan', sans-serif;
+}
+
+h1{
+    font-size: 50px;
+}
+p{
+    font-size: 20px;
+}
+span{
+    color: red;
+}
+.landing-pg h1, p{
+    display: flex;
+    justify-content: center;
+}
+
+.select-gen #generations{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.select-gen li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+.select-gen li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+.select-gen li a:hover,
+.select-gen li a.active{
+    color: red;
+}
+.select-gen li a.active::after,
+.select-gen li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+.content-box{
+    width: 500px;
+    height: 500px;
+    border: 10px solid lightgray;
+    border-radius: 10px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 60px;
+    background: url(img/pokeball.jpg) no-repeat;
+    background-size: cover;
+}
+#poke-info{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+#poke-list{
+    width: 50%;
+    height: 100%;
+    font-size: 18px;
+    overflow-y: auto;
+}
+.poke-name{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+#poke-info img{
+    width: 160px;
+    height: 160px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: white;
+}
+#poke-types{
+    margin-top: 10px;
+}
+.type-box{
+    padding: 3px;
+    margin: 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.normal{
+    background-color: rgb(214, 151, 99);
+    color: white;
+}
+.fighting{
+    background-color: red;
+    color: white;
+}
+.flying{
+    background-color: #b3b3e7;
+    color: white;
+}
+.poison{
+    background-color: blueviolet;
+    color: white;
+}
+.ground{
+    background-color: rgb(221, 167, 66);
+    color: white;
+}
+.rock{
+    background-color: rgb(189, 124, 3);
+    color: white;
+}
+.bug{
+    background-color: rgb(66, 163, 66);
+    color: white;
+}
+.ghost{
+    background-color: darkslateblue;
+    color: white;
+}
+.steel{
+    background-color: grey;
+    color: white;
+}
+.fire{
+    background-color: orangered;
+    color: white;
+}
+.water{
+    background-color: rgb(0, 119, 255);
+    color: white;
+}
+.grass{
+    background-color: green;
+    color: white;
+}
+.electric{
+    background-color: yellow;
+    color: white;
+}
+.psychic{
+    background-color: rgb(248, 113, 135);
+    color: white;
+}
+.ice{
+    background-color: aqua;
+    color: white;
+}
+.dragon{
+    background-color: rgb(64, 52, 141);
+    color: white;
+}
+.dark{
+    background-color: #2B1700;
+    color: white;
+}
+.fairy{
+    background-color: rgb(247, 169, 182);
+    color: white;
+}
+#poke-des{
+    width: 230px;
+    height: 100px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 2px;
+    font-size: 18px;
+    overflow-y: auto;
+}
